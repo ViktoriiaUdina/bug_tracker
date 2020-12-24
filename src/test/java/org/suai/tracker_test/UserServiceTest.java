@@ -18,8 +18,8 @@ public class UserServiceTest {
     @Test
     @Transactional
     @Rollback
-    void findAllTickets() {
-
+    void findAllUsers() {
+        assertEquals(1, userService.findAll().size());
     }
 
 
